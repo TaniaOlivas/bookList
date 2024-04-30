@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books To Read</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="lib/jquery-3.6.0.js"></script>
+    <script src="books.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <div class="header">
+          <h1>Books To Read</h1>
+          <p>Create your own "Books To Read" List!</p>
+        </div>
+        <div class="animations">
+          <h1 class="deleteAnimation">Book Deleted</h1>
+          <h1 class="createdAnimation">Book Created</h1>
+        </div>
+      </div>
+      <div class="mainBody">
+        <div class="readList">
+          <h3>Books To Read</h3>
+          <div class="bookList"></div>
+        </div>
+        <div class="bookSearch">
+          <h3>Add a Book To Reading List</h3>
+          <div>
+            <fieldset class="manual">
+              <legend>Manually</legend>
+              <label for="title">Title:</label>
+              <input type="text" id="title" />
+              <label for="author">Author:</label>
+              <input type="text" id="author" />
+              <br />
+              <br />
+              <div class="manualBtn">
+                <button onclick="manuallyCreate()" class="blueBtn">
+                  Create
+                </button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Search for a Book</legend>
+              <label for="search">Enter Title:</label>
+              <input type="text" id="searchTitle" />
+              <button onclick="getData()" class="blueBtn">Search</button>
+            </fieldset>
+          </div>
+          <div class="searchResults"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+.header {
+  text-align: center;
+  background-color: rgb(253, 246, 234);
+  padding: 2px;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.readList {
+  flex: 3 1 400px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bookSearch h3 {
+  text-align: center;
+}
+
+.bookSearch {
+  flex: 3 1 400px;
+  background-color: rgb(253, 246, 234);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.animations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60px;
+  text-align: center;
+}
+
+.createdAnimation {
+  flex: 3 1 200px;
+  color: steelblue;
+  width: 200px;
+}
+.deleteAnimation {
+  flex: 3 1 200px;
+  color: steelblue;
+  width: 200px;
+}
+
+img {
+  width: 70px;
+  margin: 10px;
+}
+
+.bookTitle {
+  text-align: center;
+}
+
+fieldset {
+  color: steelblue;
+  border-color: steelblue;
+  border-width: 3px;
+}
+
+.manualBtn {
+  text-align: center;
+}
+
+.blueBtn {
+  background-color: rgb(218, 234, 255);
+  color: steelblue;
+  border-radius: 5px;
+  border: 2px solid steelblue;
+  height: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+.tanBtn {
+  background-color: rgb(253, 246, 234);
+  color: steelblue;
+  border-radius: 5px;
+  border: 2px solid rgb(212, 206, 196);
+  padding: 5px;
+  margin: 5px;
+}
+
+#wholeSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: rgb(253, 246, 234);
+  margin: 10px;
+}
+
+.resultSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(202, 223, 249);
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
