@@ -1,3 +1,10 @@
+body {
+  font-family: 'Poetsen One', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: rgb(253, 246, 234);
+}
+
 .header {
   text-align: center;
   background-color: rgb(253, 246, 234);
@@ -9,6 +16,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.sectionTitle {
+  color: rgb(54, 101, 139);
+  text-align: center;
 }
 
 .readList {
@@ -26,7 +38,7 @@
 
 .bookSearch {
   flex: 3 1 400px;
-  background-color: rgb(253, 246, 234);
+  background-color: lightsteelblue;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
@@ -61,9 +73,11 @@ img {
 }
 
 fieldset {
-  color: steelblue;
+  color: rgb(54, 101, 139);
   border-color: steelblue;
   border-width: 3px;
+  padding: 10px;
+  margin: 8px;
 }
 
 .manualBtn {
@@ -72,20 +86,13 @@ fieldset {
 
 .blueBtn {
   background-color: rgb(218, 234, 255);
-  color: steelblue;
+  font-family: 'Poetsen One', sans-serif;
+  color: rgb(54, 101, 139);
   border-radius: 5px;
-  border: 2px solid steelblue;
+  border: 2px solid rgb(54, 101, 139);
   height: 30px;
   justify-content: center;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
-}
-.tanBtn {
-  background-color: rgb(253, 246, 234);
-  color: steelblue;
-  border-radius: 5px;
-  border: 2px solid rgb(212, 206, 196);
   padding: 5px;
   margin: 5px;
 }
@@ -97,17 +104,8 @@ fieldset {
   justify-content: space-evenly;
   text-align: center;
   background-color: rgb(253, 246, 234);
+  border: 3px solid rgb(219, 214, 204);
+  border-radius: 5px;
   margin: 10px;
-}
-
-.resultSection {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: rgb(202, 223, 249);
-  border-radius: 25px;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
 }

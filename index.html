@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books To Read</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="lib/jquery-3.6.0.js"></script>
     <script src="books.js"></script>
@@ -12,8 +19,8 @@
     <div class="wrapper">
       <div>
         <div class="header">
-          <h1>Books To Read</h1>
-          <p>Create your own "Books To Read" List!</p>
+          <h1 class="sectionTitle" id="headerTitle">Books List</h1>
+          <p class="sectionTitle">Create your own "Books To Read" List!</p>
         </div>
         <div class="animations">
           <h1 class="deleteAnimation">Book Deleted</h1>
@@ -22,11 +29,11 @@
       </div>
       <div class="mainBody">
         <div class="readList">
-          <h3>Books To Read</h3>
+          <h1 class="sectionTitle">Books To Read</h1>
           <div class="bookList"></div>
         </div>
         <div class="bookSearch">
-          <h3>Add a Book To Reading List</h3>
+          <h1 class="sectionTitle">Add a Book To Reading List</h1>
           <div>
             <fieldset class="manual">
               <legend>Manually</legend>
@@ -34,8 +41,6 @@
               <input type="text" id="title" />
               <label for="author">Author:</label>
               <input type="text" id="author" />
-              <br />
-              <br />
               <div class="manualBtn">
                 <button onclick="manuallyCreate()" class="blueBtn">
                   Create

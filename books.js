@@ -5,12 +5,12 @@ const bookResults = (objects) => {
     let index = 0
 
     Object.values(objects.items).forEach(function (object) {
-        let resultSection = $(`<div class = "resultSection"></div>`)
+        let resultSection = $(`<div id = 'wholeSection'></div>`)
         let bookImage = $(`<div><img src = "${object.volumeInfo.imageLinks.smallThumbnail}" /></div>`)
         let infoDiv = $(`<div class = "resultDetailsDiv"></div>`)
         let bookTitle = $(`<p class = "bookTitle">Title: ${object.volumeInfo.title}</p>`)
         let bookAuthor = $(`<p class = "bookAuthor">Author: ${object.volumeInfo.authors[0]}</p>`)
-        let addBookButton = $(`<button onclick="addBook(event)" id ="${index}" class = "tanBtn">Add to Reading List</button>`)
+        let addBookButton = $(`<button onclick="addBook(event)" id ="${index}" class = "blueBtn">Add to Reading List</button>`)
         index = index + 1
 
         bookSearch.push({
@@ -105,7 +105,7 @@ const getData = () => {
 
     $(".searchResults").empty()
     let title = $("#searchTitle").val()
-    let APIKey = "AIzaSyBFwgVd0mk8AyhraRSm71loZgaALIDazvs"
+    let APIKey = 'AIzaSyBFwgVd0mk8AyhraRSm71loZgaALIDazvs'
     $.ajax({
         type: 'GET',
         url: `https://www.googleapis.com/books/v1/volumes?q=intitle:${title}&printType=books&maxResults=5&key=${APIKey}`,
